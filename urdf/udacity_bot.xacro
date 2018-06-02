@@ -43,7 +43,7 @@
 
 
   <joint type="continuous" name="right_wheel_hinge">
-    <origin xyz="0 -0.15 0" rpy="0 0 0"/>
+    <origin xyz="0 -0.5 0" rpy="0 0 0"/>
     <child link="right_wheel"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
@@ -77,7 +77,7 @@
   </link>
 
   <joint type="continuous" name="left_wheel_hinge">
-    <origin xyz="0 0.15 0" rpy="0 0 0"/>
+    <origin xyz="0 0.5 0" rpy="0 0 0"/>
     <child link="left_wheel"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
@@ -115,7 +115,7 @@
     <visual name='chassis_visual'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <box size=".4 .2 .1"/>
+        <box size=".4 0.9 .1"/>
       </geometry>
     </visual>
 
@@ -216,7 +216,7 @@
       />
     </inertial>
     <visual name='visual_hokuyo'>
-      <origin xyz="0.0 0 0" rpy="0 0 0"/>
+      <origin xyz="0.0 0.4 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://udacity_bot/meshes/hokuyo.dae"/>
       </geometry>
